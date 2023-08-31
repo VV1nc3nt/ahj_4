@@ -12,8 +12,7 @@
     "test": "jest --testPathPattern=./src/ --env=jsdom",
     "e2e": "jest --testPathPattern=./e2e/ --runInBand",
     "coverage": "jest --testPathPattern=./src/ --coverage",
-    "lint": "eslint ./src",
-    "gcp-build": "node node_modules/puppeteer/install.js"
+    "lint": "eslint ./src"
   },
   "author": "",
   "license": "ISC",
