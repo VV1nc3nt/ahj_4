@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
+    "build": "webpack --mode development",
     "test": "jest --testPathPattern=./src/ --env=jsdom",
     "e2e": "jest --testPathPattern=./e2e/ --runInBand",
     "coverage": "jest --testPathPattern=./src/ --coverage",
