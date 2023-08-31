@@ -10,8 +10,8 @@
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode development",
     "test": "jest --testPathPattern=./src/ --env=jsdom",
-    "e2e": "jest --testPathPattern=./e2e/ --runInBand --env=jsdom",
-    "coverage": "jest --testPathPattern=./src/ --coverage",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand",
+    "coverage": "jest --testPathPattern=./src/ --coverage --env=jsdom",
     "lint": "eslint ./src"
   },
   "author": "",
