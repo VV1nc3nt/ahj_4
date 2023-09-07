@@ -1,6 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   devServer: {
@@ -10,13 +12,13 @@ module.exports = {
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'assets/img/[name][ext]'
+    assetModuleFilename: 'assets/img/[name][ext]',
   },
   module: {
     rules: [
       {
         test: /\.(png|jpg|gif)$/i,
-        type: 'asset/resource'
+        type: 'asset/resource',
       },
       {
         test: /\.js$/,
@@ -53,6 +55,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: './licenses.txt', to: 'license.txt' },
+      ],
     }),
   ],
 };
