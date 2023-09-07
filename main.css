@@ -1,0 +1,43 @@
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/assets/css/style.css ***!
+  \****************************************************************************/
+.form_wrapper {
+  display: flex;
+  width: 100vw;
+  margin: 250px 0 32px;
+}
+
+.form {
+  align-self: center;
+  justify-self: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.input_field {
+  width: 200px;
+  padding: 16px;
+  border-radius: 100px;
+}
+
+.input_submit {
+  width: 100px;
+  padding: 16px;
+  margin-left: 16px;
+  border-radius: 100px;
+}
+
+.card_icons {
+  display: flex;
+  justify-content: space-around;
+
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.card_img {
+  width: 50px;
+  opacity: 0.2;
+}
+
+/*# sourceMappingURL=main.css.map*/
